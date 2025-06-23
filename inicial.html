@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+</head>
+<body class="cor-fundo">
+    <div class="container justify-content-center align-items-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5 col-sm-8">
+
+                <div class="card " style="width: 28rem;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h1 class="card-title text-center cor-letra">Lista de Tarefas</h1>
+                        <h5 class="card-text text-center ">Adicionar tarefa</h5>
+                        <input type="text" class="form-control w-75 mb-2" placeholder="Digite sua tarefa" id="inputTarefa">
+                        <button class="btn btn-success" onclick="adicionarTarefa()">Adicionar tarefa</button>
+                        <div id="campoVazio" class="alert alert-danger d-none mt-3">
+                           
+                        </div>
+            </div>
+            <div class="col-12 col-md-12 col-sm-9 p-2">
+                        <ul class="list-group list-froup-flush p-1" id="listaTarefa">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
